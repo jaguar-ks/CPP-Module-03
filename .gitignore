@@ -1,0 +1,11 @@
+# vscode
+.vscode
+
+# Object files
+*.o
+obj
+
+# Other
+*.swp
+a.out
+.DS_Store
