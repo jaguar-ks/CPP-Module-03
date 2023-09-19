@@ -6,7 +6,7 @@
 /*   By: faksouss <faksouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 00:52:47 by faksouss          #+#    #+#             */
-/*   Updated: 2023/09/19 02:22:56 by faksouss         ###   ########.fr       */
+/*   Updated: 2023/09/19 02:45:29 by faksouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,19 +47,9 @@ ScavTrap & ScavTrap::operator=( ScavTrap const &obj ) {
 }
 
 void    ScavTrap::attack( std::string const &target ) {
-    std::cout << "ScavTrap " << this->Name << " attack " << target << ", causing " << this->Attack_dmg << " points of damage!" << std::endl;
+    std::cout << this->Name << " attack " << target << ", causing " << this->Attack_dmg << " points of damage!" << std::endl;
 }
 
-void    ScavTrap::guardGate() {
-    std::cout << "ScavTrap " << this->Name << " has enterred in Gate keeper mode" << std::endl;
-}
-
-void    ScavTrap::takeDamage( unsigned int amount ) {
-    std::cout << "ScavTrap " << this->Name << " take " << amount << " points of damage!" << std::endl;
-    this->Health -= amount;
-}
-
-void    ScavTrap::beRepaired(unsigned int amount) {
-    std::cout << "ScavTrap " << this->getName() << " has been repaired for " << amount << " points of health!" << std::endl;
-    this->setHealth(this->getHealth() + amount);
+void   ScavTrap::guardGate( void ) {
+    std::cout << this->Name << " has enterred in Gate keeper mode" << std::endl;
 }

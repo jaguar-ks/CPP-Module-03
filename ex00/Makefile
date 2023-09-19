@@ -6,7 +6,7 @@
 #    By: faksouss <faksouss@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/16 01:38:45 by faksouss          #+#    #+#              #
-#    Updated: 2023/09/17 02:56:48 by faksouss         ###   ########.fr        #
+#    Updated: 2023/09/17 04:00:52 by faksouss         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,4 +43,4 @@ re : fclean all
 
 .PHONY: all re fclean clean
 
-.SILENT: all re fclean clean $(NAME) $(OBJ) x
+.SILENT: all re fclean clean $(NAME) $(OBJ) 

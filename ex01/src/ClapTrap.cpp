@@ -6,7 +6,7 @@
 /*   By: faksouss <faksouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 04:00:37 by faksouss          #+#    #+#             */
-/*   Updated: 2023/09/17 04:00:40 by faksouss         ###   ########.fr       */
+/*   Updated: 2023/09/19 02:45:50 by faksouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,16 +79,16 @@ int ClapTrap::getAttack_dmg( void ) const {
 }
 
 void ClapTrap::attack(std::string const & target) {
-    std::cout << "ClapTrap " << this->Name << " attack " << target << ", causing " << this->Attack_dmg << " points of damage!" << std::endl;
+    std::cout << this->Name << " attack " << target << ", causing " << this->Attack_dmg << " points of damage!" << std::endl;
 
 }
 
 void ClapTrap::takeDamage(unsigned int amount) {
-    std::cout << "ClapTrap " << this->Name << " take " << amount << " points of damage!" << std::endl;
+    std::cout << this->Name << " take " << amount << " points of damage!" << std::endl;
     this->Health -= amount;
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
-    std::cout << "ClapTrap " << this->Name << " be repaired " << amount << " points of damage!" << std::endl;
+    std::cout << this->Name << " be repaired " << amount << " points of damage!" << std::endl;
     this->Health += amount;
 }
