@@ -22,9 +22,9 @@ the following way:
 
 | Access        | Public | Private | Protected |
 |---------------|--------|---------|-----------|
-| Same class    | [x]    | [x]     | [x]       |
-| Derived class | [x]    | [x]     | [ ]       |
-| Outside class | [x]    | [ ]     | [ ]       |
+| Same class    | yes    | yes     | yes       |
+| Derived class | yes    | yes     | no        |
+| Outside class | yes    | no      | no        |
 
 A derived class inherits all base class methods with the following exceptions:
 > + Constructors, destructors and copy constructors of the base class.
