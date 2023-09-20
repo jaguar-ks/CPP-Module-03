@@ -6,7 +6,7 @@
 /*   By: faksouss <faksouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 00:52:47 by faksouss          #+#    #+#             */
-/*   Updated: 2023/09/19 02:45:29 by faksouss         ###   ########.fr       */
+/*   Updated: 2023/09/19 22:53:09 by faksouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ ScavTrap & ScavTrap::operator=( ScavTrap const &obj ) {
 }
 
 void    ScavTrap::attack( std::string const &target ) {
-    std::cout << this->Name << " attack " << target << ", causing " << this->Attack_dmg << " points of damage!" << std::endl;
+    std::cout << this->Name << " attack " << target << ", causing " << this->Attack_dmg << " points of damage!!" << std::endl;
 }
 
 void   ScavTrap::guardGate( void ) {
