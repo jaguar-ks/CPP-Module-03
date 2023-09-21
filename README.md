@@ -9,6 +9,7 @@
         1. [Private Inheritance](#private-inheritanc)
 1. [Multiple Inheritance](#multiple-inheritance)
     1. [Diamond Problem](#diamond-problem)
+    1. [Virtual Inheritance](#virtual-inheritance)
 ---
 ## **Inheritance**
 
@@ -58,11 +59,18 @@ Where access is one of public, protected, or private and would be given for ever
 
 ---
 ### ***Diamond Problem***
-When two super classes of a class share a base class, and try to inherite from both those two classes, the grandchild class receives two copies of every attribute from the grandparent class, which results in ambiguities.
+In C++, a class can inherit from multiple classes which is commonly referred as multiple inheritance. But this can cause problems sometimes, as you can have multiple instances of the base class.
 
-![daimond problem diagra](https://miro.medium.com/v2/resize:fit:1400/1*zw4KUCa_4YXpld4alY1iJw.png)
+To tackle this problem, C++ uses a technique which ensures only one instance of a base class is present. That technique is referred as virtual inheritance.
 
-> To solve the diamond problem, we should use the virtual keyword, which restricts the duplicate inheritance of the same function.
+![problem diagram](https://www.freecodecamp.org/news/content/images/2023/02/hierarchial-1.png)
+
+> We can see that we have multiple instances of the class A. So the request to a variable becomes ambiguous because the compiler doesn't know which instance we are referring to – is it through B or through C ? That's the real problem.
+
+---
+### ***Virtual Inheritance***
+
+To inherit virtually we simply add a keyword virtual before our base class name in the derived class declaration like this:
 
 ```cpp
     class A {
@@ -78,3 +86,6 @@ When two super classes of a class share a base class, and try to inherite from b
         //IMPLEMANTATION
     };
 ```
+> Inheriting virtually guarantees that there will be only one instance of the base class among the derived classes that virtually inherited it. 
+
+![corecte way to inherite](https://www.freecodecamp.org/news/content/images/2023/02/diamond-1.png)
