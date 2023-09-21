@@ -86,6 +86,7 @@ To inherit virtually we simply add a keyword virtual before our base class name 
         //IMPLEMANTATION
     };
 ```
+![corecte way to inherite](https://www.freecodecamp.org/news/content/images/2023/02/diamond-1.png)
+
 > Inheriting virtually guarantees that there will be only one instance of the base class among the derived classes that virtually inherited it. 
 
-![corecte way to inherite](https://www.freecodecamp.org/news/content/images/2023/02/diamond-1.png)
