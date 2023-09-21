@@ -10,6 +10,7 @@
 1. [Multiple Inheritance](#multiple-inheritance)
     1. [Diamond Problem](#diamond-problem)
     1. [Virtual Inheritance](#virtual-inheritance)
+1. [FinalMark & Author](#finalmark--author)
 ---
 ## **Inheritance**
 
@@ -89,4 +90,8 @@ To inherit virtually we simply add a keyword virtual before our base class name 
 ![corecte way to inherite](https://www.freecodecamp.org/news/content/images/2023/02/diamond-1.png)
 
 > Inheriting virtually guarantees that there will be only one instance of the base class among the derived classes that virtually inherited it. 
+---
+## **FinalMark & Author**
+![finalmark](FinalMark.png)
 
+**Author:**[jaguar-ks](https://github.com/jaguar-ks)

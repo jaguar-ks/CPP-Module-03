@@ -6,7 +6,7 @@
 /*   By: faksouss <faksouss@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 04:03:14 by faksouss          #+#    #+#             */
-/*   Updated: 2023/09/20 06:30:28 by faksouss         ###   ########.fr       */
+/*   Updated: 2023/09/21 05:21:37 by faksouss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int main( void ){
     
     DiamondTrap dmd;
-    dmd.attack("wlad l9hab");
+    dmd.attack("Target");
     std::cout << dmd.getName() << " health befor being attcked is: " << dmd.getHealth() << std::endl;
     dmd.takeDamage(50);
     std::cout << dmd.getName() << " health after being attcked is: " << dmd.getHealth() << std::endl;
