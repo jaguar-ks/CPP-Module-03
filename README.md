@@ -60,7 +60,7 @@ Where access is one of public, protected, or private and would be given for ever
 ### ***Diamond Problem***
 When two super classes of a class share a base class, and try to inherite from both those two classes, the grandchild class receives two copies of every attribute from the grandparent class, which results in ambiguities.
 
-![daimond problem diagra](#https://cdn-media-1.freecodecamp.org/images/1*QVZomxLNxnRYhm9gGIfYyw.png)
+![daimond problem diagra](https://miro.medium.com/v2/resize:fit:1400/1*zw4KUCa_4YXpld4alY1iJw.png)
 
 > To solve the diamond problem, we should use the virtual keyword, which restricts the duplicate inheritance of the same function.
 
